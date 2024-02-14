@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background: linear-gradient(180deg, rgb(245, 245, 245), rgb(153, 174, 196));
+}
+
+ion-icon {
+  font-size: 64px;
+}
+
+.iam ion-icon {
+  font-size: 100px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  font-size: 48px;
+  height: 100vh;
+}
+
+.wrapper > div {
+  text-align: center;
+}
+
+.iam {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.webdev {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.photo {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.threesixty {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.iconset {
+  display: none;
+}
+
+main > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-icon:hover {
+  transform: translateY(5px);
+  cursor: pointer;
+}
+
+.iam:hover {
+  
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / 5;
+    grid-row: 4;
+}
+
+.up {
+    max-width: 600px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: Archivo Black;
+}
